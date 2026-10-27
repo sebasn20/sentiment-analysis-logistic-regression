@@ -19,5 +19,20 @@ evaluated with accuracy, precision, recall, and F1-score.
 ## Setup
 Create a virtual environment, then run: pip install -r requirements.txt
 
+## Results (Twitter US Airline Sentiment, test set)
+
+| Model | Accuracy | Macro F1 |
+|---|---|---|
+| Logistic Regression + TF-IDF (baseline) | 0.794* | 0.716* |
+| Logistic Regression + TF-IDF (balanced class weights) | 0.776 | 0.732 |
+
+*Validation set. Settings were tuned on the validation set; the test set was
+used once for the final score.
+
+Balanced class weights raised recall on the minority classes
+(neutral 0.48 to 0.68, positive 0.61 to 0.76 on validation) at a small cost to
+negative recall. Most remaining errors involve the neutral class, including
+complaints phrased as questions and sarcasm.
+
 ## Status
-Work in progress.
+Airline dataset complete. Stock Tweets in progress.

@@ -14,9 +14,9 @@ validation["clean_text"] = validation["text"].apply(clean_text)
 test["clean_text"] = test["text"].apply(clean_text)
 
 # save cleaned files
-train.to_csv("../data/airline_splits/train.csv", index=False)
-validation.to_csv("../data/airline_splits/validation.csv", index=False)
-test.to_csv("../data/airline_splits/test.csv", index=False)
+train.to_csv("../data/airline_clean/train.csv", index=False)
+validation.to_csv("../data/airline_clean/validation.csv", index=False)
+test.to_csv("../data/airline_clean/test.csv", index=False)
 
 print("Rows:", len(train), len(validation), len(test))
 print("Empty after cleaning:", (train["clean_text"] == "").sum())
