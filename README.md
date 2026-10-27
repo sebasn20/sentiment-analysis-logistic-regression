@@ -7,7 +7,6 @@ Naive Bayes and LSTM models built by my teammates.
 
 ## Datasets
 - [Twitter US Airline Sentiment](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)
-- [Sentiment140](https://www.kaggle.com/datasets/kazanova/sentiment140)
 - [Stock Tweets for Sentiment Analysis and Prediction](https://www.kaggle.com/datasets/equinxx/stock-tweets-for-sentiment-analysis-and-prediction)
 
 All models share the same train/validation/test splits so results are
